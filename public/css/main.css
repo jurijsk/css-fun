@@ -2,7 +2,36 @@ body {
 	background-color: #f1fff2;
 }
 
-
 body, p {
 	margin: 0;
+}
+
+/* Shared badge styling for links and buttons */
+.badge {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.25rem 0.6rem;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, 0.03);
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	color: inherit;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 0.95rem;
+	line-height: 1;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background: rgba(0, 0, 0, 0.06);
+		text-decoration: none;
+	}
+
+	img {
+		width: 18px;
+		height: 18px;
+		display: block;
+	}
 }

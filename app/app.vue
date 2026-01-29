@@ -1,29 +1,17 @@
 <script setup lang="ts">
-let stylesheets: { rel: 'stylesheet', href: string; }[] = [];
-
-stylesheets.push({
-	rel: 'stylesheet',
-	href: './css/main.css'
-});
-
-const route = useRoute().name;
-if(route) {
-	stylesheets.push({
-		rel: 'stylesheet',
-		href: `./css/${route.toString()}.css`
-	});
-}
+const route = useRoute();
 
 useHead({
-	title: route?.toString(),
-	link: stylesheets
-});
-
-
-useHead({
-	link: [
-
-	]
+	title: () => route.name?.toString() || 'css-fun',
+	link: () => {
+		const sheets: { rel: 'stylesheet'; href: string; }[] = [
+			{ rel: 'stylesheet', href: './css/main.css' }
+		];
+		if(route.name) {
+			sheets.push({ rel: 'stylesheet', href: `./css/${route.name.toString()}.css` });
+		}
+		return sheets;
+	}
 });
 </script>
 <template>
