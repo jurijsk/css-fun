@@ -14,9 +14,6 @@
 	}
 }
 
-
-
-
 .text_box_mess {
 	text-box-trim: trim-both;
 	text-box-edge: ex alphabetic;
@@ -44,9 +41,6 @@
 	}
 }
 
-
-
-
 main {
 	>div {
 		padding-bottom: 40px;
@@ -72,8 +66,8 @@ main {
 				content: '';
 				border: 0px none;
 				position: absolute;
-				bottom: -11px;
-				font-size: 8px;
+				bottom: -15px;
+				font-size: 12px;
 				right: 0px;
 				color: #686868;
 				font-family: 'Courier New', Courier, monospace;

@@ -68,7 +68,7 @@ useHead({
 			</div>
 		</main>
 		<footer>
-			<MdnBadge url="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp" />
+			<MdnBadge url="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-box" />
 		</footer>
 	</div>
 </template>
