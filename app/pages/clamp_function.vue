@@ -1,31 +1,13 @@
-<script setup lang="ts">
-
-const route = useRoute().name;
-let stylesheet: { rel: 'stylesheet', href: string; } | undefined = undefined;
-
-if(route) {
-	stylesheet = {
-		rel: 'stylesheet',
-		href: `./css/${route.toString()}.css`
-	};
-}
-
-useHead({
-	title: route?.toString(),
-	link: [stylesheet]
-});
-</script>
 <template>
-	<div class="page_wrapper">
-		<main class="page_main">
-		</main>
+	<article>
+		<main> content goes here </main>
 		<footer>
 			<MdnBadge url="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/clamp" />
 		</footer>
-	</div>
+	</article>
 </template>
 <style scoped>
-.page_wrapper {
+article {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
