@@ -6,6 +6,18 @@ body, p {
 	margin: 0;
 }
 
+*::after {
+	content: '';
+	border: 0px none;
+	position: absolute;
+	bottom: -15px;
+	font-size: 12px;
+	right: 0px;
+	color: #686868;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
 /* Shared badge styling for links and buttons */
 .badge {
 	display: inline-flex;
