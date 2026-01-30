@@ -17,7 +17,6 @@ article {
 
 	main {
 		flex: 1 0 auto;
-		padding: 1rem;
 	}
 
 	footer {
